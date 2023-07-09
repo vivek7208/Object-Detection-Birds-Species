@@ -1,5 +1,11 @@
 # 🐦 Object Detection for Bird Species 🐦
 
+[![Open In Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/vivek7208/Object-Detection-Birds-Species/blob/main/object_detection_birds.ipynb)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[![Preview in nbviewer](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.jupyter.org/github/vivek7208/Object-Detection-Birds-Species/blob/main/object_detection_birds.ipynb)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vivek7208/Object-Detection-Birds-Species/blob/main/object_detection_birds.ipynb)
+
 ## 🎓 Introduction
 This project demonstrates the use of Amazon SageMaker's object detection model to identify bird species 🐤🦆🦅. The project uses the Caltech Birds (CUB 200 2011) dataset and the Single Shot Multi-Box Detection (SSD) algorithm. The process includes data preparation, model training, and deployment on Amazon SageMaker. This README provides a comprehensive walkthrough of the steps involved in the project.
 
