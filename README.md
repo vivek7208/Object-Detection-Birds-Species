@@ -8,7 +8,8 @@ The project utilizes the Caltech Birds (CUB 200 2011) dataset, which contains 11
 
 The data preparation process includes downloading the dataset from Caltech, unpacking the dataset, and exploring the data. The images in the dataset are divided into individual named (numbered) folders, which effectively label the images for supervised learning. 
 
-![Dataset Image Placeholder](placeholder_1.png)
+![image](https://github.com/vivek7208/object_detection_birds/assets/65945306/dc23294e-cc59-49af-843e-8572604ebae7)
+
 
 ## Data Preparation
 The data preparation process starts with understanding the dataset and setting certain parameters such as `SAMPLE_ONLY`, which determines whether the model trains on a handful of species or the entire dataset. 
@@ -44,13 +45,17 @@ Hyperparameters help configure the training job. They include:
 
 The hyperparameters are set up, and the data channels are linked with the algorithm. The training job is then submitted, and the progress is monitored. The provisioning and data downloading may take some time, depending on the size of the data.
 
-![Training Image Placeholder](placeholder_2.png)
+![Training Image](https://github.com/vivek7208/object_detection_birds/assets/65945306/4251b360-d0cc-4765-a97b-8106a61a92d2)
 
 ## Hosting the Model
 After the model is trained, it is deployed as an Amazon SageMaker real-time hosted endpoint. This allows making predictions (or inferences) from the model. The endpoint deployment is accomplished with a single line of code calling the `deploy` method. 
 
 ## Testing the Model
 The model is tested by making predictions using the hosted model and visualizing the results. The results of a call to the inference endpoint include a confidence score for each detected object. Low-confidence predictions are typically not visualized.
+
+![Dataset Image Testing](https://github.com/vivek7208/object_detection_birds/assets/65945306/f55a41fd-f32a-4a62-8aba-73063ff576de)
+![Dataset Image Testing](https://github.com/vivek7208/object_detection_birds/assets/65945306/7f887441-d8b6-4bac-87bf-e5f4f86bb8fa)
+
 
 ## Model Improvement
 The notebook provides a method to improve the model by flipping the images horizontally and retraining the model with the expanded dataset. This data augmentation strategy can help improve the model's performance.
