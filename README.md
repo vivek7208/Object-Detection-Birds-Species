@@ -8,7 +8,7 @@ The project utilizes the Caltech Birds (CUB 200 2011) dataset, which contains 11
 
 The data preparation process includes downloading the dataset from Caltech, unpacking the dataset, and exploring the data. The images in the dataset are divided into individual named (numbered) folders, which effectively label the images for supervised learning. 
 
-![image](https://github.com/vivek7208/object_detection_birds/assets/65945306/dc23294e-cc59-49af-843e-8572604ebae7)
+![image](https://github.com/vivek7208/Object-Detection-Birds-Species/assets/65945306/1f7056c7-23f8-4308-a3f8-c60ba52d306b)
 
 
 ## Data Preparation
@@ -45,7 +45,8 @@ Hyperparameters help configure the training job. They include:
 
 The hyperparameters are set up, and the data channels are linked with the algorithm. The training job is then submitted, and the progress is monitored. The provisioning and data downloading may take some time, depending on the size of the data.
 
-![Training Image](https://github.com/vivek7208/object_detection_birds/assets/65945306/4251b360-d0cc-4765-a97b-8106a61a92d2)
+![image](https://github.com/vivek7208/Object-Detection-Birds-Species/assets/65945306/8211ae56-4c96-42c3-aedd-0e707164b8e4)
+
 
 ## Hosting the Model
 After the model is trained, it is deployed as an Amazon SageMaker real-time hosted endpoint. This allows making predictions (or inferences) from the model. The endpoint deployment is accomplished with a single line of code calling the `deploy` method. 
@@ -53,12 +54,15 @@ After the model is trained, it is deployed as an Amazon SageMaker real-time host
 ## Testing the Model
 The model is tested by making predictions using the hosted model and visualizing the results. The results of a call to the inference endpoint include a confidence score for each detected object. Low-confidence predictions are typically not visualized.
 
-![Dataset Image Testing](https://github.com/vivek7208/object_detection_birds/assets/65945306/f55a41fd-f32a-4a62-8aba-73063ff576de)
-![Dataset Image Testing](https://github.com/vivek7208/object_detection_birds/assets/65945306/7f887441-d8b6-4bac-87bf-e5f4f86bb8fa)
+![image](https://github.com/vivek7208/Object-Detection-Birds-Species/assets/65945306/fcbd024d-7ebc-4392-a4c7-c3a30da96202)
+![image](https://github.com/vivek7208/Object-Detection-Birds-Species/assets/65945306/0225e6f5-9b31-4f02-80f8-6cbdd7b6aa2c)
 
 
 ## Model Improvement
 The notebook provides a method to improve the model by flipping the images horizontally and retraining the model with the expanded dataset. This data augmentation strategy can help improve the model's performance.
+
+![image](https://github.com/vivek7208/Object-Detection-Birds-Species/assets/65945306/e71d447b-10a8-4a77-a5e1-04c4a8766351)
+
 
 ## Cleanup
 Finally, the SageMaker endpoint is deleted to avoid any unnecessary charges.
