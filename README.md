@@ -8,6 +8,8 @@ The project utilizes the Caltech Birds (CUB 200 2011) dataset, which contains 11
 
 The data preparation process includes downloading the dataset from Caltech, unpacking the dataset, and exploring the data. The images in the dataset are divided into individual named (numbered) folders, which effectively label the images for supervised learning. 
 
+![image](https://github.com/vivek7208/object_detection_birds/assets/65945306/dc23294e-cc59-49af-843e-8572604ebae7)
+
 
 ## Data Preparation
 The data preparation process starts with understanding the dataset and setting certain parameters such as `SAMPLE_ONLY`, which determines whether the model trains on a handful of species or the entire dataset. 
